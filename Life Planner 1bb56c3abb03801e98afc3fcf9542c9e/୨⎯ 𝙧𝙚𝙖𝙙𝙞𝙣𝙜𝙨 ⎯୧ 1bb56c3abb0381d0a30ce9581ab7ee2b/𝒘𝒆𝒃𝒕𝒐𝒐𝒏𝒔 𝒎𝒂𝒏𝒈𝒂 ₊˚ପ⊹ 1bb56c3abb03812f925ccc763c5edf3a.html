@@ -1,0 +1,698 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>𝒘𝒆𝒃𝒕𝒐𝒐𝒏𝒔 / 𝒎𝒂𝒏𝒈𝒂 ₊˚ପ⊹</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1bb56c3a-bb03-812f-925c-cc763c5edf3a" class="page sans"><header><img class="page-cover-image" src="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/Studio_Ghibli_Stills_-_Whisper_of_the_Heart_-_1920x1036.png" style="object-position:center 81.91%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="https://www.notion.so/icons/book_gray.svg"/></div><h1 class="page-title">𝒘𝒆𝒃𝒕𝒐𝒐𝒏𝒔 / 𝒎𝒂𝒏𝒈𝒂 <strong>₊˚ପ⊹</strong></h1><p class="page-description"></p><table class="properties"><tbody><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesCreatedAt"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM4.54102 8.91211H7.99316C8.30078 8.91211 8.54004 8.67285 8.54004 8.37207V3.8877C8.54004 3.58691 8.30078 3.34766 7.99316 3.34766C7.69238 3.34766 7.45312 3.58691 7.45312 3.8877V7.83203H4.54102C4.2334 7.83203 4.00098 8.06445 4.00098 8.37207C4.00098 8.67285 4.2334 8.91211 4.54102 8.91211Z"></path></svg></span>Created</th><td><time>@March 19, 2025 8:57 PM</time></td></tr></tbody></table></header><div class="page-body"><p id="1bb56c3a-bb03-81a9-8ff0-da8c2c62a8ad" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="white"><mpadded height="0em" voffset="0em"><mspace mathbackground="white" width="52.195em" height="0.3011em"></mspace></mpadded></mstyle></mrow><annotation encoding="application/x-tex">\color{white}\rule{520px}{3px}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3011em;"></span><span class="mord rule" style="color:white;border-right-width:52.195em;border-top-width:0.3011em;bottom:0em;"></span></span></span></span></span><span>﻿</span></span></p><div id="1bb56c3a-bb03-8182-b68b-cd5e5b422874" class="column-list"><div id="1bb56c3a-bb03-811b-b9c2-f79d5e3d008c" style="width:20.000000000000007%" class="column"><p id="1bb56c3a-bb03-819a-a3e7-fbb5cce31681" class="block-color-teal_background">
+</p></div><div id="1bb56c3a-bb03-81d3-8bbb-d8ad1c0fc5c7" style="width:17.5%" class="column"><p id="1bb56c3a-bb03-819d-9599-f47e319c2db8" class="block-color-yellow_background">
+</p></div><div id="1bb56c3a-bb03-814c-9ecb-fefb20e93c23" style="width:25%" class="column"><p id="1bb56c3a-bb03-811a-b5b2-c496abd237c3" class=""> <strong>୨⎯  𝒇𝒖𝒍𝒍 𝒄𝒐𝒎𝒊𝒄𝒔 𝒍𝒊𝒔𝒕 ⎯୧</strong></p></div><div id="1bb56c3a-bb03-810d-ad5b-db5a42104765" style="width:17.50000000000001%" class="column"><p id="1bb56c3a-bb03-81ea-a96b-e65b051f9d49" class="block-color-teal_background">
+</p></div><div id="1bb56c3a-bb03-81b7-9ae9-f52970aab994" style="width:20.000000000000007%" class="column"><p id="1bb56c3a-bb03-81f0-b258-fd9a66e7d127" class="block-color-yellow_background">
+</p></div></div><p id="1bb56c3a-bb03-817f-89e2-dd5915ceca8e" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="white"><mpadded height="0em" voffset="0em"><mspace mathbackground="white" width="52.195em" height="0.3011em"></mspace></mpadded></mstyle></mrow><annotation encoding="application/x-tex">\color{white}\rule{520px}{3px}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3011em;"></span><span class="mord rule" style="color:white;border-right-width:52.195em;border-top-width:0.3011em;bottom:0em;"></span></span></span></span></span><span>﻿</span></span></p><div id="1bb56c3a-bb03-81c1-a6d0-c7479d76b90e" class="collection-content"><h4 class="collection-title">୨⎯  𝒄𝒐𝒎𝒊𝒄𝒔 𝒍𝒊𝒔𝒕 ⎯୧</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Type</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>Title</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Status</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Fave?</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesMultipleSelect"><path d="M1.91602 4.83789C2.44238 4.83789 2.87305 4.40723 2.87305 3.87402C2.87305 3.34766 2.44238 2.91699 1.91602 2.91699C1.38281 2.91699 0.952148 3.34766 0.952148 3.87402C0.952148 4.40723 1.38281 4.83789 1.91602 4.83789ZM5.1084 4.52344H14.3984C14.7607 4.52344 15.0479 4.23633 15.0479 3.87402C15.0479 3.51172 14.7607 3.22461 14.3984 3.22461H5.1084C4.74609 3.22461 4.45898 3.51172 4.45898 3.87402C4.45898 4.23633 4.74609 4.52344 5.1084 4.52344ZM1.91602 9.03516C2.44238 9.03516 2.87305 8.60449 2.87305 8.07129C2.87305 7.54492 2.44238 7.11426 1.91602 7.11426C1.38281 7.11426 0.952148 7.54492 0.952148 8.07129C0.952148 8.60449 1.38281 9.03516 1.91602 9.03516ZM5.1084 8.7207H14.3984C14.7607 8.7207 15.0479 8.43359 15.0479 8.07129C15.0479 7.70898 14.7607 7.42188 14.3984 7.42188H5.1084C4.74609 7.42188 4.45898 7.70898 4.45898 8.07129C4.45898 8.43359 4.74609 8.7207 5.1084 8.7207ZM1.91602 13.2324C2.44238 13.2324 2.87305 12.8018 2.87305 12.2686C2.87305 11.7422 2.44238 11.3115 1.91602 11.3115C1.38281 11.3115 0.952148 11.7422 0.952148 12.2686C0.952148 12.8018 1.38281 13.2324 1.91602 13.2324ZM5.1084 12.918H14.3984C14.7607 12.918 15.0479 12.6309 15.0479 12.2686C15.0479 11.9062 14.7607 11.6191 14.3984 11.6191H5.1084C4.74609 11.6191 4.45898 11.9062 4.45898 12.2686C4.45898 12.6309 4.74609 12.918 5.1084 12.918Z"></path></svg></span>Author</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Score /5</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesText"><path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path></svg></span>Episode</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Buy? Own? Sell?</th></tr></thead><tbody><tr id="1bb56c3a-bb03-810c-a9c1-d294d3728777"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Killing%20Stalking%201bb56c3abb03810ca9c1d294d3728777.html">Killing Stalking</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-blue">Koogi</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-811c-92e2-dcd8dfd507da"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Painter%20of%20the%20Night%201bb56c3abb03811c92e2dcd8dfd507da.html">Painter of the Night</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">Byeonduck</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-819e-b9f1-ed1ec40d3da1"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Blood%20Bank%201bb56c3abb03819eb9f1ed1ec40d3da1.html">Blood Bank</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-orange">Silb</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-811d-b87c-eb6f4c1c2af1"><td class="cell-^HO`"><span class="selected-value select-value-color-orange">Manga</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Alice%20in%20the%20Country%20of%20Joker%20Circus%20and%20Liar%E2%80%99s%20Ga%201bb56c3abb03811db87ceb6f4c1c2af1.html">Alice in the Country of Joker: Circus and Liar’s Game</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-purple">Mamenosuke Fujimaru</span><span class="selected-value select-value-color-gray">QuinRose</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-purple">Owned</span></td></tr><tr id="1bb56c3a-bb03-8177-abd5-ec07867ef729"><td class="cell-^HO`"><span class="selected-value select-value-color-orange">Manga</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/ANGEL%20DUST%201bb56c3abb038177abd5ec07867ef729.html">ANGEL/DUST</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-yellow">Aoi Nanase</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-purple">Owned</span></td></tr><tr id="1bb56c3a-bb03-8152-8d33-f19cf5eadd3a"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/It%E2%80%99s%20Mine%201bb56c3abb0381528d33f19cf5eadd3a.html">It’s Mine </a></td><td class="cell-T:oR"><span class="selected-value select-value-color-gray">Dropped</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-red">LuckS</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐</span></td><td class="cell-Y&gt;gN">11</td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-811a-bfc5-f5a7f33ebf5e"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/My%20Dear%20Cold-Blooded%20King%201bb56c3abb03811abfc5f5a7f33ebf5e.html">My Dear Cold-Blooded King</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-gray">Dropped</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">lifelight</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐</span></td><td class="cell-Y&gt;gN">2</td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-813b-815f-f67e06a18a70"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/True%20Beauty%201bb56c3abb03813b815ff67e06a18a70.html">True Beauty</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-gray">Dropped</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">Yaongyi</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-Y&gt;gN">66</td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81b6-a102-f7a8d483e2a5"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Devil%20Number%204%201bb56c3abb0381b6a102f7a8d483e2a5.html">Devil Number 4</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-gray">Dropped</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">jangjin</span><span class="selected-value select-value-color-default">woombeee</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"></td></tr><tr id="1bb56c3a-bb03-81b9-ae9c-d8c8198216b2"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Sweet%20Home%201bb56c3abb0381b9ae9cd8c8198216b2.html">Sweet Home</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-blue">Carnby Kim</span><span class="selected-value select-value-color-red">Youngchan Hwang</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN">16</td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81b5-a991-c5a78221775a"><td class="cell-^HO`"><span class="selected-value select-value-color-orange">Manga</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Tokyo%20Ghoul%201bb56c3abb0381b5a991c5a78221775a.html">Tokyo Ghoul</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-purple">Sui Ishida</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-8105-9a00-e4effad982f0"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/I%E2%80%99m%20the%20Grim%20Reaper%201bb56c3abb0381059a00e4effad982f0.html">I’m the Grim Reaper</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">GRAVEWEAVER</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN">23</td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-812b-b75d-c3aed721319b"><td class="cell-^HO`"><span class="selected-value select-value-color-orange">Manga</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Black%20Butler%201bb56c3abb03812bb75dc3aed721319b.html">Black Butler</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-default">Yana Toboso</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-8159-b938-f477793084ab"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/I%20Love%20Yoo%201bb56c3abb038159b938f477793084ab.html">I Love Yoo</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-default">Quimchee</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"></td></tr><tr id="1bb56c3a-bb03-81d3-a8f2-fdd7ccbdeb3b"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Viper%201bb56c3abb0381d3a8f2fdd7ccbdeb3b.html">Viper</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-orange">Anko</span><span class="selected-value select-value-color-orange">Mongya</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-818d-be01-d927457c2fc0"><td class="cell-^HO`"><span class="selected-value select-value-color-pink">Manhua</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/FOG%20E-sports%201bb56c3abb03818dbe01d927457c2fc0.html">FOG E-sports</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-yellow">To read</span></td><td class="cell-y]T~"></td><td class="cell-rV?D"><span class="selected-value select-value-color-red">Chibaofan Gongchang</span><span class="selected-value select-value-color-default">Manman He Qi Duo</span><span class="selected-value select-value-color-red">Suuygo</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81c8-8626-c82840010aa8"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Get%20Schooled%201bb56c3abb0381c88626c82840010aa8.html">Get Schooled </a></td><td class="cell-T:oR"><span class="selected-value select-value-color-yellow">To read</span></td><td class="cell-y]T~"></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">GARAM HAN</span><span class="selected-value select-value-color-default">Yongtaek Chae</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81f9-94f1-c6f2986a6fbd"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Viral%20Hit%201bb56c3abb0381f994f1c6f2986a6fbd.html">Viral Hit</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-yellow">To read</span></td><td class="cell-y]T~"></td><td class="cell-rV?D"><span class="selected-value select-value-color-green">Kim Junghyun</span><span class="selected-value select-value-color-brown">Park Taejoon</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81ff-8b33-f560a629dba5"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Painter%20of%20the%20Night%202%201bb56c3abb0381ff8b33f560a629dba5.html">Painter of the Night 2</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-yellow">To read</span></td><td class="cell-y]T~"></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">Byeonduck</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81d2-8f9d-e6bc4b0b4b49"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/BJ%20Alex%201bb56c3abb0381d28f9de6bc4b0b4b49.html">BJ Alex</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-purple">Mingwa</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-8101-9b84-fa303f5533eb"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Age%20Matters%201bb56c3abb0381019b84fa303f5533eb.html">Age Matters</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-gray">Enjelicious</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-8142-862c-ef3f154e9afe"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Rotten%201bb56c3abb038142862cef3f154e9afe.html">Rotten</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">Goodguy</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-Y&gt;gN">10</td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-816b-8b3b-d6f39a641b51"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Let%E2%80%99s%20Play%201bb56c3abb03816b8b3bd6f39a641b51.html">Let’s Play</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-purple">Mongie</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-Y&gt;gN">(around pg. 155) <br/>182<br/></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81a3-8924-e69e56b23e47"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Salad%20Days%201bb56c3abb0381a38924e69e56b23e47.html">Salad Days</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">Tang Liuzang</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81af-b529-de6eabe02543"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Eleceed%201bb56c3abb0381afb529de6eabe02543.html">Eleceed</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">Jeho Son</span><span class="selected-value select-value-color-yellow">ZHENA</span></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-812b-a09e-ee16ab00ca91"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Wolf%20in%20the%20House%201bb56c3abb03812ba09eee16ab00ca91.html">Wolf in the House</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-orange">Park Jiyeon</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-Y&gt;gN">41, 11 (from a website)</td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-8106-b5a8-fb1fbed8a220"><td class="cell-^HO`"><span class="selected-value select-value-color-pink">Manhua</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Cherry%20Blossoms%20After%20Winter%201bb56c3abb038106b5a8fb1fbed8a220.html">Cherry Blossoms After Winter</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-gray">Bamwoo</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-8158-b30b-dcfe94472ac0"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Love%20History%20Caused%20by%20Willful%20Negligence%201bb56c3abb038158b30bdcfe94472ac0.html">Love History Caused by Willful Negligence</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-yellow">Ginjyo</span><span class="selected-value select-value-color-blue">Woojootokkang</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-81cc-8674-faa896ee73f5"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Lookism%201bb56c3abb0381cc8674faa896ee73f5.html">Lookism</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">Park Taejoon</span></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-Y&gt;gN">starting to get pissed off at around 380</td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td></tr><tr id="1bb56c3a-bb03-8150-b5c6-f8a512c6c84b"><td class="cell-^HO`"></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Untitled%201bb56c3abb038150b5c6f8a512c6c84b.html">Untitled</a></td><td class="cell-T:oR"></td><td class="cell-y]T~"></td><td class="cell-rV?D"></td><td class="cell-Yf{U"></td><td class="cell-Y&gt;gN"></td><td class="cell-KLeh"></td></tr></tbody></table><br/><br/></div><p id="1bb56c3a-bb03-81ad-97a8-d1357ed6cc8e" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="white"><mpadded height="0em" voffset="0em"><mspace mathbackground="white" width="52.195em" height="0.3011em"></mspace></mpadded></mstyle></mrow><annotation encoding="application/x-tex">\color{white}\rule{520px}{3px}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3011em;"></span><span class="mord rule" style="color:white;border-right-width:52.195em;border-top-width:0.3011em;bottom:0em;"></span></span></span></span></span><span>﻿</span></span></p><div id="1bb56c3a-bb03-811b-8535-c0a0674c6edf" class="column-list"><div id="1bb56c3a-bb03-81c2-9d5a-d56db32a9523" style="width:20%" class="column"><p id="1bb56c3a-bb03-81cb-9f28-d69a2708fe1a" class="block-color-teal_background">
+</p></div><div id="1bb56c3a-bb03-8134-81a2-d2029ee1af84" style="width:17.5%" class="column"><p id="1bb56c3a-bb03-81f4-85b8-e5f55fde5007" class="block-color-yellow_background">
+</p></div><div id="1bb56c3a-bb03-8176-b08e-c0ab6276742e" style="width:27.499999999999996%" class="column"><p id="1bb56c3a-bb03-81a9-9833-dab32a8c6c3a" class=""> <strong>୨⎯  𝒄𝒐𝒎𝒊𝒄𝒔 𝒔𝒕𝒂𝒕𝒖𝒔 ⎯୧</strong></p></div><div id="1bb56c3a-bb03-81ff-9727-dc53471d6f15" style="width:15.000000000000007%" class="column"><p id="1bb56c3a-bb03-81ec-b0cc-d028ee585838" class="block-color-teal_background">
+</p></div><div id="1bb56c3a-bb03-81e0-a9ff-f17820b17cb8" style="width:20%" class="column"><p id="1bb56c3a-bb03-81a8-9ab9-d93016842744" class="block-color-yellow_background">
+</p></div></div><p id="1bb56c3a-bb03-81cf-9c52-e3bfa8fac33f" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="white"><mpadded height="0em" voffset="0em"><mspace mathbackground="white" width="52.195em" height="0.3011em"></mspace></mpadded></mstyle></mrow><annotation encoding="application/x-tex">\color{white}\rule{520px}{3px}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3011em;"></span><span class="mord rule" style="color:white;border-right-width:52.195em;border-top-width:0.3011em;bottom:0em;"></span></span></span></span></span><span>﻿</span></span></p><div id="1bb56c3a-bb03-8125-8b4e-fa07cac7df8c" class="collection-content"><h4 class="collection-title">୨⎯  𝒄𝒐𝒎𝒊𝒄𝒔 𝒍𝒊𝒔𝒕 ⎯୧</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Type</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>Title</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Status</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesMultipleSelect"><path d="M1.91602 4.83789C2.44238 4.83789 2.87305 4.40723 2.87305 3.87402C2.87305 3.34766 2.44238 2.91699 1.91602 2.91699C1.38281 2.91699 0.952148 3.34766 0.952148 3.87402C0.952148 4.40723 1.38281 4.83789 1.91602 4.83789ZM5.1084 4.52344H14.3984C14.7607 4.52344 15.0479 4.23633 15.0479 3.87402C15.0479 3.51172 14.7607 3.22461 14.3984 3.22461H5.1084C4.74609 3.22461 4.45898 3.51172 4.45898 3.87402C4.45898 4.23633 4.74609 4.52344 5.1084 4.52344ZM1.91602 9.03516C2.44238 9.03516 2.87305 8.60449 2.87305 8.07129C2.87305 7.54492 2.44238 7.11426 1.91602 7.11426C1.38281 7.11426 0.952148 7.54492 0.952148 8.07129C0.952148 8.60449 1.38281 9.03516 1.91602 9.03516ZM5.1084 8.7207H14.3984C14.7607 8.7207 15.0479 8.43359 15.0479 8.07129C15.0479 7.70898 14.7607 7.42188 14.3984 7.42188H5.1084C4.74609 7.42188 4.45898 7.70898 4.45898 8.07129C4.45898 8.43359 4.74609 8.7207 5.1084 8.7207ZM1.91602 13.2324C2.44238 13.2324 2.87305 12.8018 2.87305 12.2686C2.87305 11.7422 2.44238 11.3115 1.91602 11.3115C1.38281 11.3115 0.952148 11.7422 0.952148 12.2686C0.952148 12.8018 1.38281 13.2324 1.91602 13.2324ZM5.1084 12.918H14.3984C14.7607 12.918 15.0479 12.6309 15.0479 12.2686C15.0479 11.9062 14.7607 11.6191 14.3984 11.6191H5.1084C4.74609 11.6191 4.45898 11.9062 4.45898 12.2686C4.45898 12.6309 4.74609 12.918 5.1084 12.918Z"></path></svg></span>Author</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesText"><path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path></svg></span>Episode</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Score /5</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Buy? Own? Sell?</th><th><span class="icon property-icon"><svg aria-hidden="true" role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Fave?</th></tr></thead><tbody><tr id="1bb56c3a-bb03-810c-a9c1-d294d3728777"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Killing%20Stalking%201bb56c3abb03810ca9c1d294d3728777.html">Killing Stalking</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-blue">Koogi</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-811c-92e2-dcd8dfd507da"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Painter%20of%20the%20Night%201bb56c3abb03811c92e2dcd8dfd507da.html">Painter of the Night</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">Byeonduck</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-819e-b9f1-ed1ec40d3da1"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Blood%20Bank%201bb56c3abb03819eb9f1ed1ec40d3da1.html">Blood Bank</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-orange">Silb</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-811d-b87c-eb6f4c1c2af1"><td class="cell-^HO`"><span class="selected-value select-value-color-orange">Manga</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Alice%20in%20the%20Country%20of%20Joker%20Circus%20and%20Liar%E2%80%99s%20Ga%201bb56c3abb03811db87ceb6f4c1c2af1.html">Alice in the Country of Joker: Circus and Liar’s Game</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-purple">Mamenosuke Fujimaru</span><span class="selected-value select-value-color-gray">QuinRose</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-purple">Owned</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-8177-abd5-ec07867ef729"><td class="cell-^HO`"><span class="selected-value select-value-color-orange">Manga</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/ANGEL%20DUST%201bb56c3abb038177abd5ec07867ef729.html">ANGEL/DUST</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-green">Finished</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-yellow">Aoi Nanase</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-purple">Owned</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-8152-8d33-f19cf5eadd3a"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/It%E2%80%99s%20Mine%201bb56c3abb0381528d33f19cf5eadd3a.html">It’s Mine </a></td><td class="cell-T:oR"><span class="selected-value select-value-color-gray">Dropped</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-red">LuckS</span></td><td class="cell-Y&gt;gN">11</td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-811a-bfc5-f5a7f33ebf5e"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/My%20Dear%20Cold-Blooded%20King%201bb56c3abb03811abfc5f5a7f33ebf5e.html">My Dear Cold-Blooded King</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-gray">Dropped</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">lifelight</span></td><td class="cell-Y&gt;gN">2</td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-813b-815f-f67e06a18a70"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/True%20Beauty%201bb56c3abb03813b815ff67e06a18a70.html">True Beauty</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-gray">Dropped</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">Yaongyi</span></td><td class="cell-Y&gt;gN">66</td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-81b6-a102-f7a8d483e2a5"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Devil%20Number%204%201bb56c3abb0381b6a102f7a8d483e2a5.html">Devil Number 4</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-gray">Dropped</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">jangjin</span><span class="selected-value select-value-color-default">woombeee</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-KLeh"></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-81b9-ae9c-d8c8198216b2"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Sweet%20Home%201bb56c3abb0381b9ae9cd8c8198216b2.html">Sweet Home</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-blue">Carnby Kim</span><span class="selected-value select-value-color-red">Youngchan Hwang</span></td><td class="cell-Y&gt;gN">16</td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-81b5-a991-c5a78221775a"><td class="cell-^HO`"><span class="selected-value select-value-color-orange">Manga</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Tokyo%20Ghoul%201bb56c3abb0381b5a991c5a78221775a.html">Tokyo Ghoul</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-purple">Sui Ishida</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-8105-9a00-e4effad982f0"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/I%E2%80%99m%20the%20Grim%20Reaper%201bb56c3abb0381059a00e4effad982f0.html">I’m the Grim Reaper</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">GRAVEWEAVER</span></td><td class="cell-Y&gt;gN">23</td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-812b-b75d-c3aed721319b"><td class="cell-^HO`"><span class="selected-value select-value-color-orange">Manga</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Black%20Butler%201bb56c3abb03812bb75dc3aed721319b.html">Black Butler</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-default">Yana Toboso</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-8159-b938-f477793084ab"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/I%20Love%20Yoo%201bb56c3abb038159b938f477793084ab.html">I Love Yoo</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-default">Quimchee</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-81d3-a8f2-fdd7ccbdeb3b"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Viper%201bb56c3abb0381d3a8f2fdd7ccbdeb3b.html">Viper</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-red">On Hold</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-orange">Anko</span><span class="selected-value select-value-color-orange">Mongya</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-818d-be01-d927457c2fc0"><td class="cell-^HO`"><span class="selected-value select-value-color-pink">Manhua</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/FOG%20E-sports%201bb56c3abb03818dbe01d927457c2fc0.html">FOG E-sports</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-yellow">To read</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-red">Chibaofan Gongchang</span><span class="selected-value select-value-color-default">Manman He Qi Duo</span><span class="selected-value select-value-color-red">Suuygo</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"></td></tr><tr id="1bb56c3a-bb03-81c8-8626-c82840010aa8"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Get%20Schooled%201bb56c3abb0381c88626c82840010aa8.html">Get Schooled </a></td><td class="cell-T:oR"><span class="selected-value select-value-color-yellow">To read</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">GARAM HAN</span><span class="selected-value select-value-color-default">Yongtaek Chae</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"></td></tr><tr id="1bb56c3a-bb03-81f9-94f1-c6f2986a6fbd"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Viral%20Hit%201bb56c3abb0381f994f1c6f2986a6fbd.html">Viral Hit</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-yellow">To read</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-green">Kim Junghyun</span><span class="selected-value select-value-color-brown">Park Taejoon</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"></td></tr><tr id="1bb56c3a-bb03-81ff-8b33-f560a629dba5"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Painter%20of%20the%20Night%202%201bb56c3abb0381ff8b33f560a629dba5.html">Painter of the Night 2</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-yellow">To read</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">Byeonduck</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"></td></tr><tr id="1bb56c3a-bb03-81d2-8f9d-e6bc4b0b4b49"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/BJ%20Alex%201bb56c3abb0381d28f9de6bc4b0b4b49.html">BJ Alex</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-purple">Mingwa</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-8101-9b84-fa303f5533eb"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Age%20Matters%201bb56c3abb0381019b84fa303f5533eb.html">Age Matters</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-gray">Enjelicious</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-8142-862c-ef3f154e9afe"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Rotten%201bb56c3abb038142862cef3f154e9afe.html">Rotten</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">Goodguy</span></td><td class="cell-Y&gt;gN">10</td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-816b-8b3b-d6f39a641b51"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Let%E2%80%99s%20Play%201bb56c3abb03816b8b3bd6f39a641b51.html">Let’s Play</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-purple">Mongie</span></td><td class="cell-Y&gt;gN">(around pg. 155) <br/>182<br/></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-81a3-8924-e69e56b23e47"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Salad%20Days%201bb56c3abb0381a38924e69e56b23e47.html">Salad Days</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-pink">Tang Liuzang</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-81af-b529-de6eabe02543"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Eleceed%201bb56c3abb0381afb529de6eabe02543.html">Eleceed</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">Jeho Son</span><span class="selected-value select-value-color-yellow">ZHENA</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"></td></tr><tr id="1bb56c3a-bb03-812b-a09e-ee16ab00ca91"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Wolf%20in%20the%20House%201bb56c3abb03812ba09eee16ab00ca91.html">Wolf in the House</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-orange">Park Jiyeon</span></td><td class="cell-Y&gt;gN">41, 11 (from a website)</td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-8106-b5a8-fb1fbed8a220"><td class="cell-^HO`"><span class="selected-value select-value-color-pink">Manhua</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Cherry%20Blossoms%20After%20Winter%201bb56c3abb038106b5a8fb1fbed8a220.html">Cherry Blossoms After Winter</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-gray">Bamwoo</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-8158-b30b-dcfe94472ac0"><td class="cell-^HO`"><span class="selected-value select-value-color-red">Manhwa</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Love%20History%20Caused%20by%20Willful%20Negligence%201bb56c3abb038158b30bdcfe94472ac0.html">Love History Caused by Willful Negligence</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-yellow">Ginjyo</span><span class="selected-value select-value-color-blue">Woojootokkang</span></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-default">No</span></td></tr><tr id="1bb56c3a-bb03-81cc-8674-faa896ee73f5"><td class="cell-^HO`"><span class="selected-value select-value-color-green">Webtoon</span></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Lookism%201bb56c3abb0381cc8674faa896ee73f5.html">Lookism</a></td><td class="cell-T:oR"><span class="selected-value select-value-color-blue">Reading</span></td><td class="cell-rV?D"><span class="selected-value select-value-color-brown">Park Taejoon</span></td><td class="cell-Y&gt;gN">starting to get pissed off at around 380</td><td class="cell-Yf{U"><span class="selected-value select-value-color-default">⭐⭐⭐⭐</span></td><td class="cell-KLeh"><span class="selected-value select-value-color-gray">Not buying</span></td><td class="cell-y]T~"><span class="selected-value select-value-color-orange">Yes</span></td></tr><tr id="1bb56c3a-bb03-8150-b5c6-f8a512c6c84b"><td class="cell-^HO`"></td><td class="cell-title"><a href="%F0%9D%92%98%F0%9D%92%86%F0%9D%92%83%F0%9D%92%95%F0%9D%92%90%F0%9D%92%90%F0%9D%92%8F%F0%9D%92%94%20%F0%9D%92%8E%F0%9D%92%82%F0%9D%92%8F%F0%9D%92%88%F0%9D%92%82%20%E2%82%8A%CB%9A%E0%AC%AA%E2%8A%B9%201bb56c3abb03812f925ccc763c5edf3a/%E0%AD%A8%E2%8E%AF%20%F0%9D%92%84%F0%9D%92%90%F0%9D%92%8E%F0%9D%92%8A%F0%9D%92%84%F0%9D%92%94%20%F0%9D%92%8D%F0%9D%92%8A%F0%9D%92%94%F0%9D%92%95%20%E2%8E%AF%E0%AD%A7%201bb56c3abb0381c1a6d0c7479d76b90e/Untitled%201bb56c3abb038150b5c6f8a512c6c84b.html">Untitled</a></td><td class="cell-T:oR"></td><td class="cell-rV?D"></td><td class="cell-Y&gt;gN"></td><td class="cell-Yf{U"></td><td class="cell-KLeh"></td><td class="cell-y]T~"></td></tr></tbody></table><br/><br/></div><p id="1bb56c3a-bb03-8194-a50a-d0aee0e93de6" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="white"><mpadded height="0em" voffset="0em"><mspace mathbackground="white" width="52.195em" height="0.3011em"></mspace></mpadded></mstyle></mrow><annotation encoding="application/x-tex">\color{white}\rule{520px}{3px}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3011em;"></span><span class="mord rule" style="color:white;border-right-width:52.195em;border-top-width:0.3011em;bottom:0em;"></span></span></span></span></span><span>﻿</span></span></p><div id="1bb56c3a-bb03-8196-a9ec-e3711b49e5fd" class="column-list"><div id="1bb56c3a-bb03-8112-8050-c968bf035769" style="width:100%" class="column"><p id="1bb56c3a-bb03-81b1-914e-c1cdf90aa311" class="block-color-teal_background">
+</p></div><div id="1bb56c3a-bb03-81ae-b868-cbc943a453d4" style="width:100%" class="column"><p id="1bb56c3a-bb03-811a-a549-c77dc952dcdd" class="block-color-yellow_background">
+</p></div><div id="1bb56c3a-bb03-815a-b7ca-e24836066427" style="width:100%" class="column"><p id="1bb56c3a-bb03-8141-8009-d013a4b0e9fb" class="block-color-gray_background">
+</p></div><div id="1bb56c3a-bb03-811b-8133-c71adfee2db6" style="width:100%" class="column"><p id="1bb56c3a-bb03-81a5-8927-d6b020d1306f" class="block-color-teal_background">
+</p></div><div id="1bb56c3a-bb03-815a-8184-dd8bed1d8390" style="width:100%" class="column"><p id="1bb56c3a-bb03-8111-b329-f6e2ea30768a" class="block-color-yellow_background">
+</p></div></div><p id="1bb56c3a-bb03-8151-8f92-dcbd32c884ec" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathcolor="white"><mpadded height="0em" voffset="0em"><mspace mathbackground="white" width="52.195em" height="0.3011em"></mspace></mpadded></mstyle></mrow><annotation encoding="application/x-tex">\color{white}\rule{520px}{3px}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3011em;"></span><span class="mord rule" style="color:white;border-right-width:52.195em;border-top-width:0.3011em;bottom:0em;"></span></span></span></span></span><span>﻿</span></span></p><p id="1bb56c3a-bb03-815d-8666-f5e2b5184e0e" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
